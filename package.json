@@ -1,0 +1,25 @@
+{
+  "name": "ModularThreadsGraphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "sujan321-oss <khumapokharel2076@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node build/index.js",
+    "dev": "tsc-watch --onSuccess \"npm start\""
+  },
+  "devDependencies": {
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.1",
+    "@prisma/client": "^5.11.0",
+    "@types/jsonwebtoken": "^9.0.6",
+    "crypto": "^1.0.1",
+    "express": "^4.19.0",
+    "graphql": "^16.8.1",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^5.11.0"
+  }
+}
