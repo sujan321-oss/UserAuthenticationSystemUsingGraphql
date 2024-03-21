@@ -50,7 +50,7 @@ export class UserService {
 
     public static async getUserToken(payload: TokenPayload) {
         const { email, password } = payload;
-        const user =await UserService.findUserByemail(email)
+        const user = await UserService.findUserByemail(email)
         if (!user) throw new Error("login with the valid email")
 
         const hashedpassword = UserService.generateHashedPassword(user.salt, password)

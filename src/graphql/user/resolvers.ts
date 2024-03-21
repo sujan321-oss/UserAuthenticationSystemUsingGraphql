@@ -1,5 +1,6 @@
 import { TokenPayload, UserPayload, UserService } from "../../services/user"
 
+// this is for the querying the json token for the authentcation 
 const queries = {
     getUserToken: async (_: any, payload: TokenPayload) => {
         const token = await UserService.getUserToken(payload)
@@ -7,7 +8,7 @@ const queries = {
     }
 }
 
-
+// this thing used for the signup purpose 
 const mutations = {
     createUser: async (_: any, payload: UserPayload) => {
 
@@ -15,7 +16,6 @@ const mutations = {
         return res.id;
     }
 }
-
 
 
 
